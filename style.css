@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #333;
+}
+header {
+  background: #4f46e5;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+header .subtitle {
+  margin: 0.5rem 0 1rem;
+  font-size: 1.2rem;
+}
+nav button {
+  margin: 0 0.3rem;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  cursor: pointer;
+}
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+h2 {
+  border-bottom: 2px solid #4f46e5;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+  color: #4f46e5;
+}
+h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2c2c2c;
+}
+.experience-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.exp-header .company,
+.exp-header .dates {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+}
+ul {
+  padding-left: 1.2rem;
+}
+ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+.skills span {
+  display: inline-block;
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 0.3rem 0.6rem;
+  margin: 0.2rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+.contacts li a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+.contacts li a:hover {
+  text-decoration: underline;
+}
+.chat-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 350px;
+  background: white;
+  border-left: 1px solid #ddd;
+}
+.chat-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+@media (max-width: 768px) {
+  .chat-wrapper {
+    position: static;
+    width: 100%;
+    height: 300px;
+    margin-top: 2rem;
+    border-left: none;
+    border-top: 1px solid #ccc;
+  }
+}
