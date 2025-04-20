@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --clr-primary: #4f46e5;
+  --clr-accent: #eef2ff;
+  --clr-bg: #fafafa;
+  --ff-base: 'Inter', sans-serif;
+  --fs-h1: 2.5rem;
+  --fs-base: 1rem;
+}
+
+body {
+  margin: 0;
+  font-family: var(--ff-base);
+  background: var(--clr-bg);
+  color: #333;
+}
+header {
+  background: var(--clr-primary);
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: var(--fs-h1);
+}
+header .subtitle {
+  margin: 0.5rem 0 1rem;
+  font-size: 1.2rem;
+}
+nav button {
+  margin: 0 0.3rem;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  cursor: pointer;
+  transition: background .2s;
+}
+nav button:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+h2 {
+  border-bottom: 2px solid var(--clr-primary);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+  color: var(--clr-primary);
+}
+h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2c2c2c;
+}
+.experience-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+}
+.experience-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform .2s, box-shadow .2s;
+}
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.exp-header .company,
+.exp-header .dates {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+}
+ul {
+  padding-left: 1.2rem;
+}
+ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+.skills span {
+  display: inline-block;
+  background: var(--clr-accent);
+  color: var(--clr-primary);
+  padding: 0.3rem 0.6rem;
+  margin: 0.2rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+.contacts li a {
+  color: var(--clr-primary);
+  text-decoration: none;
+}
+.contacts li a:hover {
+  text-decoration: underline;
+}
+.chat-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 350px;
+  background: white;
+  border-left: 1px solid #ddd;
+}
+.chat-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+@media (max-width: 768px) {
+  .chat-wrapper {
+    position: static;
+    width: 100%;
+    height: 300px;
+    margin-top: 2rem;
+    border-left: none;
+    border-top: 1px solid #ccc;
+  }
+}
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #777;
+}
